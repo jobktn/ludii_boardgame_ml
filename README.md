@@ -1,4 +1,3 @@
-# ludii_boardgame_ml
 ## Introduction 
 This report aims to make prediction of board games data set which has 403 rows and 386 columns. The purpose of this report is to predict 5 labels which are 
 1.	Category: A high-level taxonomy used to organise games
