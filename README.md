@@ -93,56 +93,61 @@ Figure 7. Elbow plot to see how many clusters game data set should have
 Figure 8. Applying k-mean clustering into t-SNE Plot
 
 Table 1. Predicting Category		
-ML Models	Best Hyperparameters	Accuracy
-KNeighbors Classification	{'metric': 'manhattan', 'n_neighbors': 3, 'weights': 'distance'}	0.9136
-Logistic Regression	{'C': 1, 'max_iter': 1000, 'solver': 'lbfgs'}	0.9259
-DecisionTree Classification	{'criterion': 'gini', 'max_depth': 10, 'max_leaf_nodes': 30, 'min_samples_leaf': 1, 'min_samples_split': 2}	0.9506
-Bagging Classification	{'bootstrap': True, 'n_estimators': 50}	0.9630
-Pasting Classification	{'bootstrap': False, 'n_estimators': 100}	0.9383
-RandomForest Classification	{'criterion': 'entropy', 'max_features': 'sqrt', 'min_samples_leaf': 5, 'n_estimators': 100}	0.9383
-AdaBoost Classification	{'n_estimators': 100}	0.9753
-XGBoost Classification	{'n_estimators': 50}	0.9506
+| ML Model                      | Best Hyperparameters                                                                 | Accuracy  |
+|--------------------------------|--------------------------------------------------------------------------------------|-----------|
+| KNeighbors Classification      | `{'metric': 'manhattan', 'n_neighbors': 3, 'weights': 'distance'}`                   | 0.9136    |
+| Logistic Regression            | `{'C': 1, 'max_iter': 1000, 'solver': 'lbfgs'}`                                      | 0.9259    |
+| DecisionTree Classification    | `{'criterion': 'gini', 'max_depth': 10, 'max_leaf_nodes': 30, 'min_samples_leaf': 1, 'min_samples_split': 2}` | 0.9506    |
+| Bagging Classification         | `{'bootstrap': True, 'n_estimators': 50}`                                            | 0.9630    |
+| Pasting Classification         | `{'bootstrap': False, 'n_estimators': 100}`                                          | 0.9383    |
+| RandomForest Classification    | `{'criterion': 'entropy', 'max_features': 'sqrt', 'min_samples_leaf': 5, 'n_estimators': 100}` | 0.9383    |
+| AdaBoost Classification        | `{'n_estimators': 100}`                                                              | 0.9753    |
+| XGBoost Classification        | `{'n_estimators': 50}`                                                               | 0.9506    |
 
-Table 2. Predicting Best Agent 	
-ML Models	Best Hyperparameters	Accuracy
-KNeighbors Classification	{'metric': 'cosine', 'n_neighbors': 50, 'weights': 'distance'}	0.5062
-Logistic Regression	{'C': 0.05, 'max_iter': 1000, 'solver': 'lbfgs'}	0.5556
-DecisionTree Classification	{'criterion': 'gini', 'max_depth': 10, 'max_leaf_nodes': 10, 'min_samples_leaf': 1, 'min_samples_split': 2}	0.5802
-Bagging Classification	{'bootstrap': True, 'n_estimators': 100}	0.5802
-Pasting Classification	{'bootstrap': False, 'n_estimators': 10}	0.5802
-RandomForest Classification	{'criterion': 'gini', 'max_features': 'sqrt', 'min_samples_leaf': 5, 'n_estimators': 100}	0.5556
-AdaBoost Classification	{'n_estimators': 100}	0.5679
-XGBoost Classification	{'n_estimators': 50}	0.5556
+Table 2. Predicting Best Agent
+| ML Model                      | Best Hyperparameters                                                                 | Accuracy  |
+|--------------------------------|--------------------------------------------------------------------------------------|-----------|
+| KNeighbors Classification      | `{'metric': 'cosine', 'n_neighbors': 50, 'weights': 'distance'}`                     | 0.5062    |
+| Logistic Regression            | `{'C': 0.05, 'max_iter': 1000, 'solver': 'lbfgs'}`                                  | 0.5556    |
+| DecisionTree Classification    | `{'criterion': 'gini', 'max_depth': 10, 'max_leaf_nodes': 10, 'min_samples_leaf': 1, 'min_samples_split': 2}` | 0.5802    |
+| Bagging Classification         | `{'bootstrap': True, 'n_estimators': 100}`                                          | 0.5802    |
+| Pasting Classification         | `{'bootstrap': False, 'n_estimators': 10}`                                          | 0.5802    |
+| RandomForest Classification    | `{'criterion': 'gini', 'max_features': 'sqrt', 'min_samples_leaf': 5, 'n_estimators': 100}` | 0.5556    |
+| AdaBoost Classification        | `{'n_estimators': 100}`                                                              | 0.5679    |
+| XGBoost Classification         | `{'n_estimators': 50}`                                                               | 0.5556    |
 
-Table 3. Predicting Region 		
-ML Models	Best Hyperparameters	Accuracy
-KNeighbors Classification	{'metric': 'manhattan', 'n_neighbors': 3, 'weights': 'distance'}	0.3827
-Logistic Regression	{'C': 0.05, 'max_iter': 1000, 'solver': 'liblinear'}	0.4074
-DecisionTree Classification	{'criterion': 'gini', 'max_depth': 15, 'max_leaf_nodes': 30, 'min_samples_leaf': 3, 'min_samples_split': 2}	0.358
-Bagging Classification	{'bootstrap': True, 'n_estimators': 50}	0.3951
-Pasting Classification	{'bootstrap': False, 'n_estimators': 50}	0.358
-RandomForest Classification	{'criterion': 'entropy', 'max_features': 'sqrt', 'min_samples_leaf': 5, 'n_estimators': 50}	0.358
-AdaBoost Classification	{'n_estimators': 50}	0.4074
-XGBoost Classification	{'n_estimators': 100}	0.4321
+Table 3. Predicting Region
+| ML Model                      | Best Hyperparameters                                                                 | Accuracy  |
+|--------------------------------|--------------------------------------------------------------------------------------|-----------|
+| KNeighbors Classification      | `{'metric': 'manhattan', 'n_neighbors': 3, 'weights': 'distance'}`                   | 0.3827    |
+| Logistic Regression            | `{'C': 0.05, 'max_iter': 1000, 'solver': 'liblinear'}`                              | 0.4074    |
+| DecisionTree Classification    | `{'criterion': 'gini', 'max_depth': 15, 'max_leaf_nodes': 30, 'min_samples_leaf': 3, 'min_samples_split': 2}` | 0.358     |
+| Bagging Classification         | `{'bootstrap': True, 'n_estimators': 50}`                                           | 0.3951    |
+| Pasting Classification         | `{'bootstrap': False, 'n_estimators': 50}`                                          | 0.358     |
+| RandomForest Classification    | `{'criterion': 'entropy', 'max_features': 'sqrt', 'min_samples_leaf': 5, 'n_estimators': 50}` | 0.358     |
+| AdaBoost Classification        | `{'n_estimators': 50}`                                                              | 0.4074    |
+| XGBoost Classification         | `{'n_estimators': 100}`                                                              | 0.4321    |
 
-Table 4. Predicting Origin Year	
-ML Models	Best Hyperparameters	MSE
-KNeighbors Regression	{'metric': 'cosine', 'n_neighbors': 10, 'weights': 'distance'}	1000699.44
-Linear Regression	None	4.176e+30
-DecisionTree Regression	{'criterion': 'squared_error', 'max_depth': 10, 'max_leaf_nodes': 10, 'min_samples_leaf': 1, 'min_samples_split': 2}	1285783.45
-Bagging Regression	{'bootstrap': True, 'n_estimators': 100}	1012084.77
-Pasting Regression	{'bootstrap': False, 'n_estimators': 10}	1148410.04
-RandomForest Regression	{'criterion': 'squared_error', 'max_features': 'sqrt', 'min_samples_leaf': 5, 'n_estimators': 50}	949095.536
-AdaBoost Regression	{'n_estimators': 50}	1021991.04
-XGBoost Regression	{'n_estimators': 10}	1065691.23
+Table 4. Predicting Origin Year
+| ML Model                      | Best Hyperparameters                                                                 | MSE       |
+|--------------------------------|--------------------------------------------------------------------------------------|-----------|
+| KNeighbors Regression         | `{'metric': 'cosine', 'n_neighbors': 10, 'weights': 'distance'}`                     | 1000699.44 |
+| Linear Regression              | `None`                                                                              | 4.176e+30 |
+| DecisionTree Regression        | `{'criterion': 'squared_error', 'max_depth': 10, 'max_leaf_nodes': 10, 'min_samples_leaf': 1, 'min_samples_split': 2}` | 1285783.45 |
+| Bagging Regression             | `{'bootstrap': True, 'n_estimators': 100}`                                          | 1012084.77 |
+| Pasting Regression             | `{'bootstrap': False, 'n_estimators': 10}`                                          | 1148410.04 |
+| RandomForest Regression        | `{'criterion': 'squared_error', 'max_features': 'sqrt', 'min_samples_leaf': 5, 'n_estimators': 50}` | 949095.536 |
+| AdaBoost Regression            | `{'n_estimators': 50}`                                                              | 1021991.04 |
+| XGBoost Regression             | `{'n_estimators': 10}`                                                              | 1065691.23 |
 
-Table 5. Predicting Uct		
-ML Models	Best Hyperparameters	MSE
-KNeighbors Regression	{'metric': 'cosine', 'n_neighbors': 10, 'weights': 'distance'}	101.1923
-Linear Regression	None	4.757e+26
-DecisionTree Regression	{'criterion': 'absolute_error', 'max_depth': 10, 'max_leaf_nodes': 10, 'min_samples_leaf': 3, 'min_samples_split': 2}	115.2118
-Bagging Regression	{'bootstrap': True, 'n_estimators': 50}	113.1746
-Pasting Regression	{'bootstrap': False, 'n_estimators': 50}	113.1687
-RandomForest Regression	{'criterion': 'absolute_error', 'max_features': 'sqrt', 'min_samples_leaf': 5, 'n_estimators': 100}	111.0799
-AdaBoost Regression	{'n_estimators': 100}	112.4652
-XGBoost Regression	{'n_estimators': 10}	118.8444
+Table 5. Predicting UCT
+| ML Model                      | Best Hyperparameters                                                                 | MSE       |
+|--------------------------------|--------------------------------------------------------------------------------------|-----------|
+| KNeighbors Regression         | `{'metric': 'cosine', 'n_neighbors': 10, 'weights': 'distance'}`                     | 101.1923  |
+| Linear Regression              | `None`                                                                              | 4.757e+26 |
+| DecisionTree Regression        | `{'criterion': 'absolute_error', 'max_depth': 10, 'max_leaf_nodes': 10, 'min_samples_leaf': 3, 'min_samples_split': 2}` | 115.2118  |
+| Bagging Regression             | `{'bootstrap': True, 'n_estimators': 50}`                                           | 113.1746  |
+| Pasting Regression             | `{'bootstrap': False, 'n_estimators': 50}`                                          | 113.1687  |
+| RandomForest Regression        | `{'criterion': 'absolute_error', 'max_features': 'sqrt', 'min_samples_leaf': 5, 'n_estimators': 100}` | 111.0799  |
+| AdaBoost Regression            | `{'n_estimators': 100}`                                                              | 112.4652  |
+| XGBoost Regression             | `{'n_estimators': 10}`                                                              | 118.8444  |
