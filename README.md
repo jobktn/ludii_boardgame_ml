@@ -56,7 +56,7 @@ To conclude the performance on each predicting model will be shown in the modelâ
 | Predicting Labels | ML Models                | Best Hyperparameters                                                                                   | Accuracy/MSE  |
 |-------------------|-------------------------|------------------------------------------------------------------------------------------------------|--------------|
 | Category         | AdaBoost Classifier      | {'n_estimators': 100}                                                                               | 0.9753       |
-| Best Agent       | RandomForest Regression  | {'criterion': 'gini', 'max_depth': 10, 'max_leaf_nodes': 10, 'min_samples_leaf': 1, 'min_samples_split': 2} | 0.5802       |
+| Best Agent       | DecisionTree Classifier  | {'criterion': 'gini', 'max_depth': 10, 'max_leaf_nodes': 10, 'min_samples_leaf': 1, 'min_samples_split': 2} | 0.5802       |
 | Region          | XGBoost Classifier       | {'n_estimators': 100}                                                                               | 0.4321       |
 | Origin Year     | RandomForest Regression  | {'criterion': 'squared_error', 'max_features': 'sqrt', 'min_samples_leaf': 5, 'n_estimators': 50}  | 949095.5355  |
 | Uct             | KNeighbors Regression    | {'metric': 'cosine', 'n_neighbors': 10, 'weights': 'distance'}                                      | 101.1923     |
