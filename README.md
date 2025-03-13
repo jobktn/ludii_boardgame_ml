@@ -27,25 +27,27 @@ The section will predict categorical labels which are game category, best agent,
 The data for testing will be held 20%, we encode the predicting data to transform string to numerical data and use standard scale to standardise the data. In this approach will also use benefit of Gridsearch to optimum the best fit hyperparameters for each algorithm. Finally, we measure the performance every model with accuracy.
 
 ### Predicting Category
-•	Best Model: AdaBoost Classifier with 100 estimators achieved the highest accuracy of 97.53% (Appendix, Table 1).
+•	Best Model: AdaBoost Classifier with 100 estimators achieved the highest accuracy of 97.53% (Appendix, Table 1). <br />
 •	Discussion: The ensemble methods, particularly AdaBoost, outperformed other algorithms due to their ability to combine weak learners to form a strong classifier. The high accuracy indicates that the model effectively captured the underlying patterns in the data.
+
 ### Predicting BestAgent
-•	Best Model: Decision Tree Classifier with specific hyperparameters achieved an accuracy of 58.02% (Appendix, Table 2).
+•	Best Model: Decision Tree Classifier with specific hyperparameters achieved an accuracy of 58.02% (Appendix, Table 2). <br />
 •	Discussion: The moderate accuracy suggests that predicting BestAgent is more challenging, possibly due to overlapping features among classes. In the process, there are 3 models with the same result we decide to use the simplest model to be the best perform.
+
 ### Predicting Region
-•	Best Model: XGBoost Classifier with 100 estimators achieved the highest accuracy of 43.21% (Appendix, Table 3).
+•	Best Model: XGBoost Classifier with 100 estimators achieved the highest accuracy of 43.21% (Appendix, Table 3). <br />
 •	Discussion: The lower accuracy reflects the complexity and potential overlap of features among regions. XGBoost’s gradient boosting approach helped improve performance over other models, but the results indicate that data might not have the strong correlation between the ludeme score and region.
 
 ## Regression Models
 This section will predict numerical labels, such as the game’s origin year and UCT. The algorithms used are K-Nearest Neighbors Regressor, Linear Regression, Decision Tree Regressor, and various Ensemble Learning models. The model will also employ K-fold cross-validation to mitigate the risk of overfitting.
-
 The test data will be held at 20%, and the target values are numerical. We encode categorical variables and scale the numerical features using standard scaling. The model parameters will be tuned using GridSearchCV to find the optimal hyperparameters for each algorithm. Lastly, the performance of each model will be evaluated using the mean squared error (MSE). Below are the summary tables for the regression models.
 
 ### Predicting OriginYear
-•	Best Model: Random Forest Regressor with 50 estimators and specific hyperparameters achieved the lowest MSE of 949,095.54 (Appendix, Table 4).
+•	Best Model: Random Forest Regressor with 50 estimators and specific hyperparameters achieved the lowest MSE of 949,095.54 (Appendix, Table 4). <br />
 •	Discussion: The Random Forest model effectively reduced variance and improved prediction accuracy. However, the high MSE indicates that predicting OriginYear is challenging, potentially due to wide variability and historical inaccuracies in the data.
-Predicting UCT
-•	Best Model: KNN Regressor with cosine metric and 10 neighbours achieved the lowest MSE of 101.19 (Appendix, Table 5).
+
+### Predicting UCT
+•	Best Model: KNN Regressor with cosine metric and 10 neighbours achieved the lowest MSE of 101.19 (Appendix, Table 5). <br />
 •	Discussion: The KNN model performed best, suggesting that similar games have similar UCT scores. The use of the cosine metric improved performance by capturing the similarity in the high-dimensional feature space.
 
 ## Model Performance 
