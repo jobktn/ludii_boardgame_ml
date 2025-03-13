@@ -1,3 +1,4 @@
+# Boardgame Prediction
 ## Introduction 
 This report aims to make prediction of board games data set which has 403 rows and 386 columns. The purpose of this report is to predict 5 labels which are 
 1.	Category: A high-level taxonomy used to organise games
@@ -66,7 +67,7 @@ Using the best-performing models, we make predictions on the new dataset GameDat
 4.	Origin Year: [1781., 1860., 1508., 1931., 1826.]
 5.	Uct: [50.34, 52., 58.22, 55.08, 64.6]
 
-Appendix
+# Appendix
 
 ![alt text](images/image.png)
 Figure 1. Imported Libraries for this analysis.
